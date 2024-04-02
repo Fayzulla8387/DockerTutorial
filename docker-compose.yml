@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  service1:
+    build: ./Project1
+    volumes:
+      - ./Project1:/var/www/html
+    ports:
+      - 90:80
+  service2:
+    build: ./Project2
+    volumes:
+      - ./Project2:/var/www/html
+    ports:
+      - 91:80
